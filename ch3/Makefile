@@ -1,4 +1,4 @@
-PROGS := matmul 
+PROGS := matmul matvec
 
 LDFLAGS := -I ../include/
 
