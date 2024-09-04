@@ -2,7 +2,7 @@ PROGS := matmul
 
 LDFLAGS := -I ../include/
 
-matmul: matmul.cu
+%: %.cu
 	nvcc $(LDFLAGS) -o $@ $^ 
 
 clean:
