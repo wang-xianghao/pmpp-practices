@@ -27,6 +27,7 @@ int main(int argc, char **argv)
             , devProp.maxGridSize[1]
             , devProp.maxGridSize[2]);
         printf("\tMaximum registers per SM: %d\n", devProp.regsPerBlock);
+        printf("\tMaximum shared memory per SM: %lu\n", devProp.sharedMemPerMultiprocessor);
         printf("\tMaximum threads per SM: %d\n", devProp.maxThreadsPerMultiProcessor);
         printf("\tMaximum blocks per SM: %d\n", devProp.maxBlocksPerMultiProcessor);
         printf("\tWarp size: %d\n", devProp.warpSize);
